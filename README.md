@@ -12,13 +12,15 @@
 
 <p align="center"><a href="https://github.com/deman404/nojeon-updates/releases/tag/v0.3.0">Release notes &amp; checksum</a> &nbsp;·&nbsp; <a href="docs/INSTALLATION.md">Installation guide</a> &nbsp;·&nbsp; <a href="docs/USER-GUIDE.md">User guide</a></p>
 
-[![nojeon desktop workspace — click to download the Windows installer](docs/screenshots/tasks-board.png)](https://github.com/deman404/nojeon-updates/releases/download/v0.3.0/nojeon-0.3.0-win-x64-Setup.exe)
+[![nojeon desktop workspace — click to download the Windows installer](docs/screenshots/thumbnail.png)](https://github.com/deman404/nojeon-updates/releases/download/v0.3.0/nojeon-0.3.0-win-x64-Setup.exe)
 
 **Before you download:** this desktop preview requires **Windows x64 and a separately installed MySQL Server 8+**. The .NET runtime is included. The installer is currently unsigned; see [release details](https://github.com/deman404/nojeon-updates/releases/tag/v0.3.0) before installing.
 
 ## New in 0.3.0: your tasks, in focus
 
 Switch between a compact task table and a colored Kanban board. Give each task a priority, due date, and notes; search and filter your list, then move tasks from **To do** to **In progress** to **Done**. Tasks stay with their workspace and save to your configured database.
+
+![Colored task board](docs/screenshots/tasks-board.png)
 
 ![Task list in Light mode](docs/screenshots/tasks-list-light.png)
 
