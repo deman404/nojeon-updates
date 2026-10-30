@@ -10,8 +10,8 @@ The 0.2.0 desktop preview bundles a .NET 11 release-candidate runtime and is cur
 
 ## Install
 
-1. Check this repository's Releases page for an available package and its release notes. The new documentation repository does not initially contain installers.
-2. Run the Windows Setup executable. Installation is per Windows user and does not require administrator access. Alternatively, extract the portable ZIP and run `nojeon.exe`.
+1. [Download the Windows x64 installer](https://github.com/deman404/nojeon-updates/releases/download/v0.2.0/nojeon-0.2.0-win-x64-Setup.exe) and read the [release notes and installer SHA-256](https://github.com/deman404/nojeon-updates/releases/tag/v0.2.0).
+2. Run the Windows Setup executable. Installation is per Windows user and does not require administrator access. The current public release provides the installer; a portable ZIP is not attached.
 3. Start MySQL, then open nojeon.
 4. Enter the MySQL server, port, database name, username, and password on the setup page. Use a dedicated database and an account permitted to create or update its tables. For a new database name, use at most 45 letters, numbers, or underscores.
 5. Choose **Test connection**, then **Create / update database and continue**. Back up an existing database before updating its schema.

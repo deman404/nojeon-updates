@@ -22,7 +22,11 @@ Cloud database support is the next planned milestone. It is not available in thi
 
 ## Downloads
 
-Future public installers and release notes will be published in [Releases](https://github.com/deman404/nojeon-updates/releases). No installer has been published in this new repository yet. A version entry in the changelog does not mean its installer is available here.
+**[Download nojeon 0.2.0 for Windows x64](https://github.com/deman404/nojeon-updates/releases/download/v0.2.0/nojeon-0.2.0-win-x64-Setup.exe)**
+
+[Release notes and installer SHA-256](https://github.com/deman404/nojeon-updates/releases/tag/v0.2.0) · [All releases](https://github.com/deman404/nojeon-updates/releases)
+
+The installer is currently the only application package attached to the release.
 
 ## Support
 
