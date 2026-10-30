@@ -1,33 +1,83 @@
-# nojeon
+<h1 align="center">nojeon</h1>
 
-**Your ideas. Your workspace. Your PC.**
+<p align="center"><strong>A little more space for your ideas.</strong><br>Notes, projects, and a calendar in one focused Windows workspace.</p>
 
-nojeon is a Windows desktop workspace for notes, projects, and knowledge. This public repository contains user instructions, product updates, and the roadmap. Application source code is maintained separately.
+<p align="center">
+  <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-2383E2?style=flat-square">
+  <img alt="Version 0.2.0" src="https://img.shields.io/badge/version-0.2.0-7563EB?style=flat-square">
+  <img alt="Desktop preview" src="https://img.shields.io/badge/status-desktop_preview-555555?style=flat-square">
+</p>
 
-## Start here
+<p align="center"><a href="https://github.com/deman404/nojeon-updates/releases/download/v0.2.0/nojeon-0.2.0-win-x64-Setup.exe"><img alt="Download nojeon for Windows" src="https://img.shields.io/badge/Download_for_Windows-v0.2.0-2383E2?style=for-the-badge"></a></p>
 
-- [Install and set up nojeon](docs/INSTALLATION.md)
-- [Learn how it works](docs/USER-GUIDE.md)
-- [Read updates](CHANGELOG.md)
-- [See what is next](ROADMAP.md)
-- [Report a problem or request a feature](https://github.com/deman404/nojeon-updates/issues)
+<p align="center"><a href="https://github.com/deman404/nojeon-updates/releases/tag/v0.2.0">Release notes &amp; checksum</a> &nbsp;·&nbsp; <a href="docs/INSTALLATION.md">Installation guide</a> &nbsp;·&nbsp; <a href="docs/USER-GUIDE.md">User guide</a></p>
 
-## Current desktop preview: 0.2.0
+[![nojeon desktop workspace — click to download the Windows installer](docs/screenshots/thumbnail.png)](https://github.com/deman404/nojeon-updates/releases/download/v0.2.0/nojeon-0.2.0-win-x64-Setup.exe)
 
-Organize nested pages and workspaces; write rich text, lists, tasks, code, and tables; add images and files; use tabs, side peek, search, and a local calendar. Import and export Markdown/HTML or save portable workspace backups.
+**Before you download:** this desktop preview requires **Windows x64 and a separately installed MySQL Server 8+**. The .NET runtime is included. The installer is currently unsigned; see [release details](https://github.com/deman404/nojeon-updates/releases/tag/v0.2.0) before installing.
 
-The current preview requires **Windows x64 and a running MySQL Server 8+**. Its .NET runtime is bundled. Accounts and page content use the configured MySQL database; imported files, preferences, and encrypted recovery drafts stay on your PC.
+## Make room for the work that matters
 
-Cloud database support is the next planned milestone. It is not available in this preview. Collaboration, AI, Google OAuth, and external calendar synchronization are not enabled.
+Capture a quick thought, build a project plan, or collect everything you need for your next idea. nojeon brings flexible pages, rich writing tools, and a local calendar together in a native Windows app.
 
-## Downloads
+### Write it your way
 
-**[Download nojeon 0.2.0 for Windows x64](https://github.com/deman404/nojeon-updates/releases/download/v0.2.0/nojeon-0.2.0-win-x64-Setup.exe)**
+Start with a blank page and make it yours. Combine headings, checklists, notes, code, images, attachments, and editable tables. Nest pages to give each project a home, and pin favorites to keep them close.
 
-[Release notes and installer SHA-256](https://github.com/deman404/nojeon-updates/releases/tag/v0.2.0) · [All releases](https://github.com/deman404/nojeon-updates/releases)
+![A project page with a weekly checklist, nested pages, and an editable project table](docs/screenshots/workspace.png)
 
-The installer is currently the only application package attached to the release.
+### Keep your day in view
 
-## Support
+Switch between day, three-day, week, and month views. Create colored calendars, schedule repeating events, and link the notes you need. Drag events to move them or resize their time slots.
 
-Include your app version, Windows version, steps to reproduce, and expected versus actual behavior. Remove private content from screenshots. Never post database passwords, saved sessions, or workspace backups in public issues.
+![nojeon calendar with colored events, a weekly schedule, and upcoming appointments](docs/screenshots/calendar.png)
+
+### Find your flow
+
+| When you want to… | nojeon helps you… |
+| --- | --- |
+| Bring order to a project | Organize nested pages, favorites, and separate workspaces |
+| Work across a few ideas | Open page tabs and keep a reference alongside your writing with side peek |
+| Find something again | Search page titles, content, tables, and attachment names with **Ctrl+K** |
+| Keep writing | Use autosave, visible save status, undo/redo, and encrypted recovery drafts |
+| Bring existing notes | Import Markdown or HTML documents and folders |
+| Take a copy with you | Export pages or save a portable workspace backup |
+| Make it feel comfortable | Choose Light or Dark, reading width, and editor text size |
+
+### Keep a copy of your work
+
+Import your existing notes, export a page, or save a workspace archive with its pages and attached files. Restore an archive into a new workspace when you need it.
+
+![Import, export, and workspace backup controls in nojeon settings](docs/screenshots/backup-export.png)
+
+Workspace archives are not encrypted and do not include calendar events. Keep them private, and use a MySQL database backup to preserve calendar data.
+
+## From download to your first page
+
+1. **Install nojeon.** [Download the Windows installer](https://github.com/deman404/nojeon-updates/releases/download/v0.2.0/nojeon-0.2.0-win-x64-Setup.exe), run it, and open nojeon from the Start menu.
+2. **Connect your database.** Install and start [MySQL Community Server 8+](https://dev.mysql.com/downloads/mysql/), then enter your connection details in nojeon. Choose **Test connection**, then **Create / update database and continue**.
+3. **Create your app account.** Sign in and create your first page from the sidebar. Your nojeon account is separate from a notion.com account.
+
+Installation is per Windows user. You do not need the .NET SDK. Use a dedicated MySQL database and back up existing databases before schema updates.
+
+Need more detail? Follow the [installation guide](docs/INSTALLATION.md) or explore the [user guide](docs/USER-GUIDE.md).
+
+## Your workspace, clearly explained
+
+**Where your data lives.** Accounts, pages, and calendar records use your configured MySQL database. Imported files, preferences, and encrypted recovery drafts stay on your PC. Protected local settings use Windows protection for your Windows account.
+
+**What this preview includes.** The current downloadable version is **0.2.0**, with rich pages, local calendar, search, import/export, and workspace backups. It bundles a .NET 11 release-candidate runtime.
+
+**What is coming next.** Cloud database support is the next planned milestone. Task management with list and Kanban views is in development and is not included in the current installer. Collaboration, AI, Google sign-in, and external calendar synchronization are not available in this preview. See the [roadmap](ROADMAP.md) for planned work.
+
+**Checking your download.** The [release page](https://github.com/deman404/nojeon-updates/releases/tag/v0.2.0) includes the installer SHA-256 and a PowerShell command to check it. Download the `.exe` under Assets to install the app. GitHub's automatic “Source code” archives contain this repository's documentation.
+
+## Follow along
+
+[Product updates](CHANGELOG.md) · [All releases](https://github.com/deman404/nojeon-updates/releases) · [Roadmap](ROADMAP.md) · [Report a problem](https://github.com/deman404/nojeon-updates/issues/new/choose)
+
+Found something that could be better? Open an issue with your app version, Windows version, and steps to reproduce. Remove private content from screenshots and keep database credentials, session files, and workspace backups out of public issues.
+
+---
+
+<p align="center"><strong>Your ideas. Your workspace. Your PC.</strong><br><sub>Independent Windows app. Not affiliated with Notion Labs, Inc.<br>This repository is the public home for nojeon downloads, documentation, and product updates.</sub></p>
