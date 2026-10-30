@@ -1,5 +1,19 @@
 # Product updates
 
+## 0.4.0 — Templates & planning backups — 2026-10-30
+
+- Added a full template gallery with preview cards, categories, search, sorting, details, and Light/Dark support.
+- Included Meeting notes, Project brief, and Weekly plan starter layouts.
+- Added Save as template, reuse, rename, and delete for local account-scoped templates, with independent nested pages and attachments.
+- Version 2 workspace archives now include workspace tasks and all account calendars/events.
+- Restore creates separate calendar copies and remaps links to restored pages, preserving recurrence, time zones, and all-day dates. Older version 1 archives remain readable.
+- Refreshed the branded thumbnail and gallery screenshots.
+
+Saved template libraries are local and not included in workspace archives. Backups are not encrypted. Older app versions cannot read version 2 archives. No new database migration is introduced by this release.
+
+[Release and downloads](https://github.com/deman404/nojeon-updates/releases/tag/v0.4.0)
+
+
 ## 0.3.0 — Tasks, your way — 2026-10-30
 
 - Added workspace task management in a compact table and colored Kanban board.

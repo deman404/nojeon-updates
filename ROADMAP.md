@@ -18,13 +18,18 @@ Before release, the work needs to cover:
 
 Cloud database support does not by itself promise offline synchronization, live collaboration, shared workspaces, or external calendar integration. Those capabilities require separate scope and verification.
 
+## Shipped in 0.4.0
+
+- Reusable starter and personal templates with a full gallery page.
+- Workspace backup/restore for tasks and all account calendars/events.
+
 ## Shipped in 0.3.0
 
 - Workspace task management: table and colored Kanban views, due dates, priorities, notes, search, and filters.
 
 ## Further improvements
 
-- Task/calendar export and inclusion in account-level backups.
+- Dedicated task/calendar exports and backup coverage for saved template libraries.
 - A supported stable .NET runtime after verification.
 - Code signing and a clear application update policy.
 - Accessibility, keyboard navigation, and large-workspace performance improvements.

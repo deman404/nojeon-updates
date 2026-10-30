@@ -27,9 +27,16 @@ Tasks save explicitly rather than through page autosave. Database failures keep
 editor text available for retry. Tasks do not currently have offline drafts,
 reminders, recurring schedules, assignees, or calendar synchronization.
 
-**Backup:** existing `.notionbackup` workspace archives and Markdown/HTML exports
-cover pages/files, not tasks. Back up MySQL to preserve tasks. Deleting a workspace
-also deletes its tasks; restore of a page archive does not restore tasks.
+**Backup (0.4.0 and later):** version 2 `.notionbackup` archives include this
+workspace’s tasks and all account calendars/events, alongside pages and files.
+Restore creates a new workspace and separate calendar copies, with fresh IDs and
+page links remapped. Existing calendars stay unchanged. Calendar links to pages
+outside the saved workspace are omitted. Deleting a workspace also deletes its
+tasks. Backups are not encrypted; keep them private.
+
+The published 0.3.0 installer and older version 1 archives include pages/files only.
+New builds still read those archives. Older apps cannot read version 2 archives.
+Markdown/HTML exports continue to cover pages/files only.
 
 The `AddWorkspaceTasks` migration adds the Tasks table. Existing databases are
 offered a database update through the normal startup/setup flow.
