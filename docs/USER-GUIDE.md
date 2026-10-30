@@ -8,6 +8,10 @@ Open multiple pages in tabs or use side peek to reference a second page. Search 
 
 Pages autosave. Watch the save status; if a write fails, restore the database connection and use Retry. Encrypted local recovery drafts help preserve unsaved changes.
 
+## Tasks
+
+Open **Tasks** in the sidebar. Use **All tasks** for the table or **Board** for status columns. Create a task with a title, notes, priority, due date, and status. Open a title to edit, click the status tag to advance it, or use the dots menu to change status or delete. Search titles/notes and filter by status and due date. See [the task guide](TASKS.md).
+
 ## Calendar
 
 Open **Calendar** from the sidebar. Choose Day, 3 days, Week, or Month. Click or drag a time slot to create an event. Click an event to edit its details, then choose Save or press **Ctrl+Enter**. Drag an event to move it; drag its bottom edge to resize it.
@@ -18,7 +22,7 @@ Events support colored calendars, all-day entries, linked pages, and daily, week
 
 Use **Settings > Import / export** to import Markdown/HTML documents or folders, export a page with referenced files, or save and restore a workspace archive. Repeat workspace backups for each workspace.
 
-**Workspace archives do not include calendar events.** Back up the MySQL database to preserve calendars. Workspace backup archives contain readable content and files and are not encrypted; keep them private. Markdown/HTML conversion does not preserve every complex layout exactly.
+**Workspace archives do not include tasks or calendar events.** Back up the MySQL database to preserve tasks and calendars. Workspace backup archives contain readable content and files and are not encrypted; keep them private. Markdown/HTML conversion does not preserve every complex layout exactly.
 
 ## Where data lives
 

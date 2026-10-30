@@ -1,5 +1,19 @@
 # Product updates
 
+## 0.3.0 — Tasks, your way — 2026-10-30
+
+- Added workspace task management in a compact table and colored Kanban board.
+- Added task titles, notes, priorities, optional due dates, status changes, and confirmed deletion.
+- Added title/notes search, status/due-date filters, and completion/overdue counts.
+- Refined the interface with an inline header, vector icons, colored tags, and page-style task details.
+- Added the Tasks database migration with workspace/account isolation and conflict checks.
+- Published fresh screenshots, a task guide, installer, portable ZIP, and SHA-256 checksums.
+
+**Upgrade:** back up MySQL and local files, close the app, install 0.3.0, and complete database setup/update. Tasks and calendars require MySQL backups; page archives do not include them. Cloud database support remains planned.
+
+[Release and downloads](https://github.com/deman404/nojeon-updates/releases/tag/v0.3.0)
+
+
 ## Documentation hub — 2026-10-30
 
 - Established a separate public home for user instructions, release announcements, and the roadmap.
