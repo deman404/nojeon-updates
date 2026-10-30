@@ -1,5 +1,19 @@
 # Product updates
 
+## 0.5.0 — Make every page yours — 2026-10-30
+
+- Added cover banners, uploaded page logos, and emoji icons, with replace/remove controls.
+- Added 205 bundled color emoji with search/categories and 12 ready-made cover backgrounds.
+- Icons appear in the sidebar and subpage lists. Artwork persists in autosave, duplication, templates, and backups.
+- Added the AddPageCoversAndIcons database migration.
+- Artwork archives use format version 3; older version 1/2 archives remain readable. Older apps cannot read version 3.
+- Refreshed screenshots, thumbnail, guides, installer, portable ZIP, and checksums.
+
+Upgrade: back up MySQL and local files, close nojeon, install the update, and complete database setup/update. Markdown/HTML exports currently omit page covers/icons.
+
+[Release and downloads](https://github.com/deman404/nojeon-updates/releases/tag/v0.5.0)
+
+
 ## 0.4.0 — Templates & planning backups — 2026-10-30
 
 - Added a full template gallery with preview cards, categories, search, sorting, details, and Light/Dark support.

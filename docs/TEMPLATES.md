@@ -39,3 +39,5 @@ the local profile private. Tasks and calendars are not part of a page template.
 Limits: 100 custom templates per account, 1,000 pages and 20,000 blocks per template,
 with the archive limits of 256 MB total, 32 MB manifest, and 100 MB per attachment.
 Available in nojeon 0.4.0 and later.
+
+Page artwork in templates requires nojeon 0.5.0 or later. Cover and icon images are copied independently when reusing the template, even if the original page image is removed.

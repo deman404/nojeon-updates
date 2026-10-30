@@ -18,6 +18,11 @@ Before release, the work needs to cover:
 
 Cloud database support does not by itself promise offline synchronization, live collaboration, shared workspaces, or external calendar integration. Those capabilities require separate scope and verification.
 
+## Shipped in 0.5.0
+
+- Page covers, custom logos, searchable color emoji, and a built-in background gallery.
+- Artwork preservation in backups, duplication, and templates.
+
 ## Shipped in 0.4.0
 
 - Reusable starter and personal templates with a full gallery page.

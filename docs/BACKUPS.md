@@ -1,4 +1,4 @@
-# Workspace backups in nojeon 0.4.0
+# Workspace backups in nojeon 0.5.0
 
 Open **Settings > Import / export > Save workspace backup**. Save the
 `.notionbackup` file somewhere private. Page edits are saved before the archive
@@ -41,3 +41,7 @@ changes and cleans up newly copied attachment files.
 For a full local recovery copy, preserve your MySQL database and local profile
 (`%LOCALAPPDATA%\Notion` by default), including your template library and any
 separately configured imported-file storage.
+
+## Page artwork
+
+Archives containing covers/icons use version 3. Image files are included and restored with the destination account's ownership. Upgrade to nojeon 0.5.0 or later before restoring version 3; older version 1/2 archives remain readable. Markdown/HTML exports currently omit page covers/icons.

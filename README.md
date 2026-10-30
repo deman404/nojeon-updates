@@ -4,19 +4,38 @@
 
 <p align="center">
   <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-2383E2?style=flat-square">
-  <img alt="Version 0.4.0" src="https://img.shields.io/badge/version-0.4.0-7563EB?style=flat-square">
+  <img alt="Version 0.5.0" src="https://img.shields.io/badge/version-0.5.0-7563EB?style=flat-square">
   <img alt="Desktop preview" src="https://img.shields.io/badge/status-desktop_preview-555555?style=flat-square">
 </p>
 
-<p align="center"><a href="https://github.com/deman404/nojeon-updates/releases/download/v0.4.0/nojeon-0.4.0-win-x64-Setup.exe"><img alt="Download nojeon for Windows" src="https://img.shields.io/badge/Download_for_Windows-v0.4.0-2383E2?style=for-the-badge"></a></p>
+<p align="center"><a href="https://github.com/deman404/nojeon-updates/releases/download/v0.5.0/nojeon-0.5.0-win-x64-Setup.exe"><img alt="Download nojeon for Windows" src="https://img.shields.io/badge/Download_for_Windows-v0.5.0-2383E2?style=for-the-badge"></a></p>
 
-<p align="center"><a href="https://github.com/deman404/nojeon-updates/releases/tag/v0.4.0">Release notes &amp; checksum</a> &nbsp;·&nbsp; <a href="docs/INSTALLATION.md">Installation guide</a> &nbsp;·&nbsp; <a href="docs/USER-GUIDE.md">User guide</a></p>
+<p align="center"><a href="https://github.com/deman404/nojeon-updates/releases/tag/v0.5.0">Release notes &amp; checksum</a> &nbsp;·&nbsp; <a href="docs/INSTALLATION.md">Installation guide</a> &nbsp;·&nbsp; <a href="docs/USER-GUIDE.md">User guide</a></p>
 
-[![nojeon desktop workspace — click to download the Windows installer](docs/screenshots/thumbnail.png)](https://github.com/deman404/nojeon-updates/releases/download/v0.4.0/nojeon-0.4.0-win-x64-Setup.exe)
+[![nojeon desktop workspace — click to download the Windows installer](docs/screenshots/thumbnail.png)](https://github.com/deman404/nojeon-updates/releases/download/v0.5.0/nojeon-0.5.0-win-x64-Setup.exe)
 
-**Before you download:** this desktop preview requires **Windows x64 and a separately installed MySQL Server 8+**. The .NET runtime is included. The installer is currently unsigned; see [release details](https://github.com/deman404/nojeon-updates/releases/tag/v0.4.0) before installing.
+**Before you download:** this desktop preview requires **Windows x64 and a separately installed MySQL Server 8+**. The .NET runtime is included. The installer is currently unsigned; see [release details](https://github.com/deman404/nojeon-updates/releases/tag/v0.5.0) before installing.
 
-## New in 0.4.0: a head start for every page
+## New in 0.5.0: make every page yours
+
+Add a wide cover image, choose a color emoji, or upload your own logo. Browse **205 emoji** and **12 ready-made backgrounds**, with search and categories. Artwork follows autosave and stays with copied pages, templates, and backups.
+
+![Page cover and logo](docs/screenshots/page-artwork.png)
+
+<details>
+<summary>Emoji, cover gallery, and Light mode</summary>
+
+![Color emoji picker](docs/screenshots/emoji-picker.png)
+
+![Ready-made cover backgrounds](docs/screenshots/cover-picker.png)
+
+![Page artwork in Light mode](docs/screenshots/page-artwork-light.png)
+
+</details>
+
+[Page artwork guide](docs/PAGE-ARTWORK.md) · [Release notes](https://github.com/deman404/nojeon-updates/releases/tag/v0.5.0)
+
+## Reusable page templates
 
 Browse a gallery of starter layouts and your own saved templates. Search, filter categories, and open a card to explore its layout. Choose **Use this template** to create an independent page—or save your best page from **··· > Save as template**.
 
@@ -35,7 +54,7 @@ Browse a gallery of starter layouts and your own saved templates. Search, filter
 
 Workspace archives now include the selected workspace’s tasks and **all calendars/events for your account**, along with pages and files. Restore creates a new workspace and separate calendar copies. Older page-only archives remain supported.
 
-[Template guide](docs/TEMPLATES.md) · [Backup guide](docs/BACKUPS.md) · [Release notes](https://github.com/deman404/nojeon-updates/releases/tag/v0.4.0)
+[Template guide](docs/TEMPLATES.md) · [Backup guide](docs/BACKUPS.md) · [Release notes](https://github.com/deman404/nojeon-updates/releases/tag/v0.5.0)
 
 ## Manage tasks your way
 
@@ -88,11 +107,11 @@ Import your existing notes, export a page, or save a workspace archive with its 
 
 ![Import, export, and workspace backup controls in nojeon settings](docs/screenshots/backup-export.png)
 
-Version 2 workspace archives include workspace tasks and all account calendars/events. They are not encrypted; keep them private. Saved template libraries stay on this PC and are not part of workspace archives. See the [backup guide](docs/BACKUPS.md).
+Workspace archives include workspace tasks and all account calendars/events. Archives with covers/icons use format version 3 and require nojeon 0.5.0 or later. They are not encrypted; keep them private. Saved template libraries stay on this PC and are not part of workspace archives. See the [backup guide](docs/BACKUPS.md).
 
 ## From download to your first page
 
-1. **Install nojeon.** [Download the Windows installer](https://github.com/deman404/nojeon-updates/releases/download/v0.4.0/nojeon-0.4.0-win-x64-Setup.exe), run it, and open nojeon from the Start menu.
+1. **Install nojeon.** [Download the Windows installer](https://github.com/deman404/nojeon-updates/releases/download/v0.5.0/nojeon-0.5.0-win-x64-Setup.exe), run it, and open nojeon from the Start menu.
 2. **Connect your database.** Install and start [MySQL Community Server 8+](https://dev.mysql.com/downloads/mysql/), then enter your connection details in nojeon. Choose **Test connection**, then **Create / update database and continue**.
 3. **Create your app account.** Sign in and create your first page from the sidebar. Your nojeon account is separate from a notion.com account.
 
@@ -104,15 +123,15 @@ Need more detail? Follow the [installation guide](docs/INSTALLATION.md) or explo
 
 **Where your data lives.** Accounts, pages, tasks, and calendar records use your configured MySQL database. Imported files, preferences, and encrypted recovery drafts stay on your PC. Protected local settings use Windows protection for your Windows account.
 
-**What this preview includes.** The current downloadable version is **0.4.0**, with rich pages, reusable page templates, workspace tasks, a local calendar, and planning backups. It bundles a .NET 11 release-candidate runtime.
+**What this preview includes.** The current downloadable version is **0.5.0**, with rich pages, reusable page templates, workspace tasks, a local calendar, and planning backups. It bundles a .NET 11 release-candidate runtime.
 
 **What is coming next.** Cloud database support is the next planned milestone. Collaboration, AI, Google sign-in, and external calendar synchronization are not available in this preview. See the [roadmap](ROADMAP.md) for planned work.
 
-**Checking your download.** The [release page](https://github.com/deman404/nojeon-updates/releases/tag/v0.4.0) includes the installer SHA-256 and a PowerShell command to check it. Download the `.exe` under Assets to install the app. GitHub's automatic “Source code” archives contain this repository's documentation.
+**Checking your download.** The [release page](https://github.com/deman404/nojeon-updates/releases/tag/v0.5.0) includes the installer SHA-256 and a PowerShell command to check it. Download the `.exe` under Assets to install the app. GitHub's automatic “Source code” archives contain this repository's documentation.
 
 ### Upgrading from an earlier version
 
-Back up your MySQL database and local files, close nojeon, and run the new installer. Apply any pending database updates, then open **Templates** from the sidebar. Version 0.4.0 itself introduces no new database migration. See the [upgrade instructions](docs/INSTALLATION.md).
+Back up your MySQL database and local files, close nojeon, and run the new installer. Apply any pending database updates, then open **Templates** from the sidebar. Version 0.5.0 adds optional page artwork columns; complete database setup/update when prompted. See the [upgrade instructions](docs/INSTALLATION.md).
 
 ## Follow along
 
@@ -122,4 +141,4 @@ Found something that could be better? Open an issue with your app version, Windo
 
 ---
 
-<p align="center"><strong>Your ideas. Your workspace. Your PC.</strong><br><sub>Independent Windows app. Not affiliated with Notion Labs, Inc.<br>This repository is the public home for nojeon downloads, documentation, and product updates.</sub></p>
+<p align="center"><strong>Your ideas. Your workspace. Your PC.</strong><br><sub>Emoji artwork: <a href="https://github.com/jdecked/twemoji">Twemoji</a>, Twitter, Inc. and contributors · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.<br>Independent Windows app. Not affiliated with Notion Labs, Inc.<br>This repository is the public home for nojeon downloads, documentation, and product updates.</sub></p>

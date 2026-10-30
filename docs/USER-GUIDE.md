@@ -8,6 +8,10 @@ Open multiple pages in tabs or use side peek to reference a second page. Search 
 
 Pages autosave. Watch the save status; if a write fails, restore the database connection and use Retry. Encrypted local recovery drafts help preserve unsaved changes.
 
+## Page covers and icons
+
+Choose **Add cover** above a page title for the background gallery or image uploads. Choose **Add icon** for searchable color emoji or your own logo. Click the existing icon to change/remove it. See [the artwork guide](PAGE-ARTWORK.md).
+
 ## Reusable templates
 
 Open **Templates** in the sidebar to browse the gallery. Search, filter categories, open a card, and choose **Use this template**. Save your own layout using a page menu > Save as template. See [the template guide](TEMPLATES.md).
@@ -26,7 +30,7 @@ Events support colored calendars, all-day entries, linked pages, and daily, week
 
 Use **Settings > Import / export** to import Markdown/HTML documents or folders, export a page with referenced files, or save and restore a workspace archive. Repeat workspace backups for each workspace.
 
-**Version 2 workspace archives include the selected workspace's tasks and all account calendars/events.** Restore creates a new workspace and separate calendar copies. Older archives contain pages/files only. Saved template libraries are not included. See [the backup guide](BACKUPS.md). Workspace backup archives contain readable content and files and are not encrypted; keep them private. Markdown/HTML conversion does not preserve every complex layout exactly.
+**Workspace archives include tasks and account calendars/events; version 3 also preserves page artwork.** Restore creates a new workspace and separate calendar copies. Older archives contain pages/files only. Saved template libraries are not included. See [the backup guide](BACKUPS.md). Workspace backup archives contain readable content and files and are not encrypted; keep them private. Markdown/HTML conversion does not preserve every complex layout exactly.
 
 ## Where data lives
 

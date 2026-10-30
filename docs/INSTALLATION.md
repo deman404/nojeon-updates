@@ -6,11 +6,11 @@
 - MySQL Community Server 8 or newer, installed and running separately.
 - A nojeon Windows installer or portable package from a published release.
 
-The 0.4.0 desktop preview bundles a .NET 11 release-candidate runtime and is currently unsigned. You do not need to install the .NET SDK to use it.
+The 0.5.0 desktop preview bundles a .NET 11 release-candidate runtime and is currently unsigned. You do not need to install the .NET SDK to use it.
 
 ## Install
 
-1. [Download the Windows x64 installer](https://github.com/deman404/nojeon-updates/releases/download/v0.4.0/nojeon-0.4.0-win-x64-Setup.exe) and read the [release notes and installer SHA-256](https://github.com/deman404/nojeon-updates/releases/tag/v0.4.0).
+1. [Download the Windows x64 installer](https://github.com/deman404/nojeon-updates/releases/download/v0.5.0/nojeon-0.5.0-win-x64-Setup.exe) and read the [release notes and installer SHA-256](https://github.com/deman404/nojeon-updates/releases/tag/v0.5.0).
 2. Run the Windows Setup executable. Installation is per Windows user and does not require administrator access. Alternatively, download the portable ZIP from the release page, extract it, and run `nojeon.exe`.
 3. Start MySQL, then open nojeon.
 4. Enter the MySQL server, port, database name, username, and password on the setup page. Use a dedicated database and an account permitted to create or update its tables. For a new database name, use at most 45 letters, numbers, or underscores.
@@ -34,3 +34,7 @@ After installing, complete the database update when prompted. Open **Tasks** in 
 ## New in 0.4.0
 
 Open Templates to browse layouts or save your own page from its menu. Workspace backup archives now include workspace tasks and all account calendars/events. Restore creates separate calendar copies. Saved template libraries remain on this PC and are not included in workspace archives. No new schema migration is introduced by 0.4.0; setup still handles pending migrations from older versions.
+
+## Page artwork in 0.5.0
+
+Back up MySQL and local files, close nojeon, and run the installer. Complete database setup/update to apply AddPageCoversAndIcons. Choose Add cover or Add icon above a page title. Artwork archives use version 3 and require nojeon 0.5.0 or later. See [the artwork guide](PAGE-ARTWORK.md).
