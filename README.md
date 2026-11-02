@@ -107,3 +107,8 @@ The automatic source ZIPs contain these public documents, not the desktop app's
 private source code.
 
 [All updates](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report an issue](https://github.com/deman404/nojeon-updates/issues)
+---
+
+Emoji artwork: [Twemoji](https://github.com/jdecked/twemoji), Twitter, Inc. and contributors,
+licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Independent Windows app. Not affiliated with Notion Labs, Inc.
