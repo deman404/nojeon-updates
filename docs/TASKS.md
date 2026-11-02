@@ -1,7 +1,7 @@
 # Task management
 
 Open **Tasks** in the sidebar (also available when the sidebar is collapsed).
-Tasks belong to the active workspace and are saved in MySQL. Switching workspaces
+Tasks belong to the active workspace, save to SQLite on this PC, and sync to Supabase when connected. Switching workspaces
 shows that workspace's tasks; other accounts cannot read or modify them.
 
 Choose **New task**, enter a title, optional notes and due date, status, and
@@ -38,5 +38,5 @@ The published 0.3.0 installer and older version 1 archives include pages/files o
 New builds still read those archives. Older apps cannot read version 2 archives.
 Markdown/HTML exports continue to cover pages/files only.
 
-The `AddWorkspaceTasks` migration adds the Tasks table. Existing databases are
-offered a database update through the normal startup/setup flow.
+In 0.6.0, task storage is initialized automatically in the SQLite cache. Pending
+task edits and deletions sync through your cloud account; no database setup is needed.

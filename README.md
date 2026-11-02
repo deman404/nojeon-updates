@@ -1,144 +1,109 @@
 <h1 align="center">nojeon</h1>
 
-<p align="center"><strong>A little more space for your ideas.</strong><br>Notes, tasks, projects, and a calendar in one focused Windows workspace.</p>
+<p align="center"><strong>Your ideas. Your workspace. Wherever you work.</strong><br>Notes, tasks, projects, and a calendar in one focused Windows app.</p>
 
 <p align="center">
-  <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-2383E2?style=flat-square">
-  <img alt="Version 0.5.0" src="https://img.shields.io/badge/version-0.5.0-7563EB?style=flat-square">
-  <img alt="Desktop preview" src="https://img.shields.io/badge/status-desktop_preview-555555?style=flat-square">
+<img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-2383E2?style=flat-square">
+<img alt="Version 0.6.0" src="https://img.shields.io/badge/version-0.6.0-7563EB?style=flat-square">
+<img alt="Cloud and offline" src="https://img.shields.io/badge/cloud_%2B_offline-Supabase_%2B_SQLite-3ECF8E?style=flat-square">
 </p>
 
-<p align="center"><a href="https://github.com/deman404/nojeon-updates/releases/download/v0.5.0/nojeon-0.5.0-win-x64-Setup.exe"><img alt="Download nojeon for Windows" src="https://img.shields.io/badge/Download_for_Windows-v0.5.0-2383E2?style=for-the-badge"></a></p>
+<p align="center"><a href="https://github.com/deman404/nojeon-updates/releases/download/v0.6.0/nojeon-0.6.0-win-x64-Setup.exe"><img alt="Download nojeon for Windows" src="https://img.shields.io/badge/Download_for_Windows-v0.6.0-2383E2?style=for-the-badge"></a></p>
 
-<p align="center"><a href="https://github.com/deman404/nojeon-updates/releases/tag/v0.5.0">Release notes &amp; checksum</a> &nbsp;·&nbsp; <a href="docs/INSTALLATION.md">Installation guide</a> &nbsp;·&nbsp; <a href="docs/USER-GUIDE.md">User guide</a></p>
+[![nojeon — work offline, sync online](docs/screenshots/thumbnail.png)](https://github.com/deman404/nojeon-updates/releases/download/v0.6.0/nojeon-0.6.0-win-x64-Setup.exe)
 
-[![nojeon desktop workspace — click to download the Windows installer](docs/screenshots/thumbnail.png)](https://github.com/deman404/nojeon-updates/releases/download/v0.5.0/nojeon-0.5.0-win-x64-Setup.exe)
+<p align="center"><a href="https://github.com/deman404/nojeon-updates/releases/tag/v0.6.0">Release notes</a> &nbsp;·&nbsp; <a href="https://github.com/deman404/nojeon-updates/releases/download/v0.6.0/SHA256SUMS.txt">Checksums</a> &nbsp;·&nbsp; <a href="docs/INSTALLATION.md">Installation guide</a> &nbsp;·&nbsp; <a href="docs/USER-GUIDE.md">User guide</a></p>
 
-**Before you download:** this desktop preview requires **Windows x64 and a separately installed MySQL Server 8+**. The .NET runtime is included. The installer is currently unsigned; see [release details](https://github.com/deman404/nojeon-updates/releases/tag/v0.5.0) before installing.
+**For Windows x64.** The runtime is included. An internet connection is needed
+for first-time signup/login; after that, your cached workspace works offline.
+**No MySQL installation or database setup is required.** This is an unsigned
+desktop preview using the project's .NET 11 release-candidate runtime.
 
-## New in 0.5.0: make every page yours
+## New in 0.6.0: your workspace, connected
 
-Add a wide cover image, choose a color emoji, or upload your own logo. Browse **205 emoji** and **12 ready-made backgrounds**, with search and categories. Artwork follows autosave and stays with copied pages, templates, and backups.
+Your notes should be ready when you are. nojeon now saves your work to SQLite
+on your PC and syncs it privately through Supabase when you're online.
 
-![Page cover and logo](docs/screenshots/page-artwork.png)
+- **A cloud account:** email signup, confirmation, login, and protected saved sessions.
+- **Offline editing:** pages, tasks, and calendars save locally, with pending changes kept across restarts.
+- **Your files, too:** attachments, page artwork, and saved templates sync between devices.
+- **A clear save status:** distinguish **Saved on this PC** from **Synced**.
+- **Recovery when edits collide:** choose this PC or the cloud, with the replaced version kept in recovery.
+
+[How cloud and offline work →](docs/CLOUD-SYNC.md)
+
+## Make room for your ideas
+
+![Page covers and icons in the nojeon desktop workspace](docs/screenshots/page-artwork.png)
+
+| In your workspace | What you can do |
+| --- | --- |
+| **Notes and pages** | Write with rich blocks, tables, checklists, images, attachments, and nested pages |
+| **Tasks** | Plan in a list or colored Kanban board, with status, priority, notes, and due dates |
+| **Calendar** | Keep colored calendars, recurring/all-day events, and links to your notes |
+| **Templates** | Start from a ready-made layout or save your own reusable page template |
+| **Page artwork** | Add a cover, choose from 205 color emoji, or upload your own page logo |
+| **Find and organize** | Search your workspace, use favorites, and open tabs or side peek |
+| **Take a copy** | Import/export Markdown or HTML and save portable workspace backups |
 
 <details>
-<summary>Emoji, cover gallery, and Light mode</summary>
-
-![Color emoji picker](docs/screenshots/emoji-picker.png)
-
-![Ready-made cover backgrounds](docs/screenshots/cover-picker.png)
-
-![Page artwork in Light mode](docs/screenshots/page-artwork-light.png)
-
-</details>
-
-[Page artwork guide](docs/PAGE-ARTWORK.md) · [Release notes](https://github.com/deman404/nojeon-updates/releases/tag/v0.5.0)
-
-## Reusable page templates
-
-Browse a gallery of starter layouts and your own saved templates. Search, filter categories, and open a card to explore its layout. Choose **Use this template** to create an independent page—or save your best page from **··· > Save as template**.
-
-![Reusable page templates gallery](docs/screenshots/templates.png)
-
-<details>
-<summary>Explore Light mode and template details</summary>
-
-![Templates gallery in Light mode](docs/screenshots/templates-light.png)
-
-![Template detail page](docs/screenshots/template-detail.png)
-
-</details>
-
-### More complete backups
-
-Workspace archives now include the selected workspace’s tasks and **all calendars/events for your account**, along with pages and files. Restore creates a new workspace and separate calendar copies. Older page-only archives remain supported.
-
-[Template guide](docs/TEMPLATES.md) · [Backup guide](docs/BACKUPS.md) · [Release notes](https://github.com/deman404/nojeon-updates/releases/tag/v0.5.0)
-
-## Manage tasks your way
-
-Switch between a compact task table and a colored Kanban board. Give each task a priority, due date, and notes; search and filter your list, then move tasks from **To do** to **In progress** to **Done**. Tasks stay with their workspace and save to your configured database.
+<summary><strong>See tasks, templates, and the confirmation email</strong></summary>
 
 ![Colored task board](docs/screenshots/tasks-board.png)
 
-![Task list in Light mode](docs/screenshots/tasks-list-light.png)
+![Reusable page template gallery](docs/screenshots/templates.png)
 
-<details>
-<summary>See task details</summary>
+![Branded nojeon confirmation email](docs/screenshots/email-confirmation.png)
 
-![Task details with status, priority, due date, and notes](docs/screenshots/task-details.png)
+Screenshots use sample content. The thumbnail combines an actual app capture with
+native text and branding.
 
 </details>
 
-[How to use Tasks](docs/TASKS.md)
+## Download and start
 
-## Make room for the work that matters
-
-Capture a quick thought, build a project plan, or collect everything you need for your next idea. nojeon brings flexible pages, rich writing tools, and a local calendar together in a native Windows app.
-
-### Write it your way
-
-Start with a blank page and make it yours. Combine headings, checklists, notes, code, images, attachments, and editable tables. Nest pages to give each project a home, and pin favorites to keep them close.
-
-![A project page with a weekly checklist, nested pages, and an editable project table](docs/screenshots/workspace.png)
-
-### Keep your day in view
-
-Switch between day, three-day, week, and month views. Create colored calendars, schedule repeating events, and link the notes you need. Drag events to move them or resize their time slots.
-
-![nojeon calendar with colored events, a weekly schedule, and upcoming appointments](docs/screenshots/calendar.png)
-
-### Find your flow
-
-| When you want to… | nojeon helps you… |
+| Package | Download |
 | --- | --- |
-| Bring order to a project | Organize nested pages, favorites, and separate workspaces |
-| Work across a few ideas | Open page tabs and keep a reference alongside your writing with side peek |
-| Find something again | Search page titles, content, tables, and attachment names with **Ctrl+K** |
-| Keep writing | Use autosave, visible save status, undo/redo, and encrypted recovery drafts |
-| Bring existing notes | Import Markdown or HTML documents and folders |
-| Take a copy with you | Export pages or save a portable workspace backup |
-| Make it feel comfortable | Choose Light or Dark, reading width, and editor text size |
+| Windows installer | [nojeon-0.6.0-win-x64-Setup.exe](https://github.com/deman404/nojeon-updates/releases/download/v0.6.0/nojeon-0.6.0-win-x64-Setup.exe) |
+| Portable ZIP | [nojeon-0.6.0-win-x64-portable.zip](https://github.com/deman404/nojeon-updates/releases/download/v0.6.0/nojeon-0.6.0-win-x64-portable.zip) |
+| SHA-256 checksums | [SHA256SUMS.txt](https://github.com/deman404/nojeon-updates/releases/download/v0.6.0/SHA256SUMS.txt) |
 
-### Keep a copy of your work
+1. Install nojeon, or extract the portable ZIP and open `nojeon.exe`.
+2. Create an account, confirm the email, then return to the app and log in.
+3. Start a page, add a task, or plan an event.
+4. Sign in with the same account on another PC to download your workspace.
 
-Import your existing notes, export a page, or save a workspace archive with its pages and attached files. Restore an archive into a new workspace when you need it.
+This is an independent app with its own accounts, separate from notion.com.
+[Installation and troubleshooting](docs/INSTALLATION.md).
 
-![Import, export, and workspace backup controls in nojeon settings](docs/screenshots/backup-export.png)
+## Upgrading from the local edition
 
-Workspace archives include workspace tasks and all account calendars/events. Archives with covers/icons use format version 3 and require nojeon 0.5.0 or later. They are not encrypted; keep them private. Saved template libraries stay on this PC and are not part of workspace archives. See the [backup guide](docs/BACKUPS.md).
+**Export your work before upgrading.** In 0.5.0, save a `.notionbackup` archive
+for each workspace from **Settings / Import and export**. In 0.6.0, create your
+cloud account and restore those archives from the same settings page.
 
-## From download to your first page
+Pages, files, tasks, and calendars are remapped to the new account. Old local
+accounts do not automatically become cloud accounts. Existing MySQL databases
+and legacy local files are left untouched. Old saved template libraries are
+separate from workspace backups and do not migrate automatically.
 
-1. **Install nojeon.** [Download the Windows installer](https://github.com/deman404/nojeon-updates/releases/download/v0.5.0/nojeon-0.5.0-win-x64-Setup.exe), run it, and open nojeon from the Start menu.
-2. **Connect your database.** Install and start [MySQL Community Server 8+](https://dev.mysql.com/downloads/mysql/), then enter your connection details in nojeon. Choose **Test connection**, then **Create / update database and continue**.
-3. **Create your app account.** Sign in and create your first page from the sidebar. Your nojeon account is separate from a notion.com account.
+[Backup and migration guide](docs/BACKUPS.md).
 
-Installation is per Windows user. You do not need the .NET SDK. Use a dedicated MySQL database and back up existing databases before schema updates.
+## What to know about this preview
 
-Need more detail? Follow the [installation guide](docs/INSTALLATION.md) or explore the [user guide](docs/USER-GUIDE.md).
+- Sync uses account snapshots, with a choice when two devices make divergent edits.
+  It does not merge individual keystrokes or provide shared workspaces.
+- Google OAuth, AI features, Google/iCloud calendar connections, and collaboration
+  are not enabled.
+- Appearance preferences stay on each PC.
+- Cloud snapshots allow 16 MiB of structured content; file uploads are subject to
+  app/project limits. See [cloud sync details](docs/CLOUD-SYNC.md).
+- SQLite caches, recovery copies, and exported backups contain workspace content.
+  There is no end-to-end encryption; keep backups private.
+- Superseded cloud files and local recovery copies are retained without automatic cleanup.
 
-## Your workspace, clearly explained
+This public repository contains release downloads, instructions, and updates.
+The automatic source ZIPs contain these public documents, not the desktop app's
+private source code.
 
-**Where your data lives.** Accounts, pages, tasks, and calendar records use your configured MySQL database. Imported files, preferences, and encrypted recovery drafts stay on your PC. Protected local settings use Windows protection for your Windows account.
-
-**What this preview includes.** The current downloadable version is **0.5.0**, with rich pages, reusable page templates, workspace tasks, a local calendar, and planning backups. It bundles a .NET 11 release-candidate runtime.
-
-**What is coming next.** Cloud database support is the next planned milestone. Collaboration, AI, Google sign-in, and external calendar synchronization are not available in this preview. See the [roadmap](ROADMAP.md) for planned work.
-
-**Checking your download.** The [release page](https://github.com/deman404/nojeon-updates/releases/tag/v0.5.0) includes the installer SHA-256 and a PowerShell command to check it. Download the `.exe` under Assets to install the app. GitHub's automatic “Source code” archives contain this repository's documentation.
-
-### Upgrading from an earlier version
-
-Back up your MySQL database and local files, close nojeon, and run the new installer. Apply any pending database updates, then open **Templates** from the sidebar. Version 0.5.0 adds optional page artwork columns; complete database setup/update when prompted. See the [upgrade instructions](docs/INSTALLATION.md).
-
-## Follow along
-
-[Product updates](CHANGELOG.md) · [All releases](https://github.com/deman404/nojeon-updates/releases) · [Roadmap](ROADMAP.md) · [Report a problem](https://github.com/deman404/nojeon-updates/issues/new/choose)
-
-Found something that could be better? Open an issue with your app version, Windows version, and steps to reproduce. Remove private content from screenshots and keep database credentials, session files, and workspace backups out of public issues.
-
----
-
-<p align="center"><strong>Your ideas. Your workspace. Your PC.</strong><br><sub>Emoji artwork: <a href="https://github.com/jdecked/twemoji">Twemoji</a>, Twitter, Inc. and contributors · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.<br>Independent Windows app. Not affiliated with Notion Labs, Inc.<br>This repository is the public home for nojeon downloads, documentation, and product updates.</sub></p>
+[All updates](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report an issue](https://github.com/deman404/nojeon-updates/issues)

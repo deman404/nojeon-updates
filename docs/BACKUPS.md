@@ -1,4 +1,4 @@
-# Workspace backups in nojeon 0.5.0
+# Workspace backups in nojeon 0.6.0
 
 Open **Settings > Import / export > Save workspace backup**. Save the
 `.notionbackup` file somewhere private. Page edits are saved before the archive
@@ -33,14 +33,21 @@ changes and cleans up newly copied attachment files.
 - Older applications cannot read version 2 archives. Upgrade to 0.4.0 or later.
 - Archives are **not encrypted**. They exclude passwords, database credentials,
   and saved sessions, but their content and attached files are readable.
-- Saved template libraries are local profile files and are **not included**.
+- Saved template libraries sync between devices in 0.6.0 but are **not included** in workspace backup archives.
 - Markdown/HTML exports remain page/file-only.
 - Limits: 256 MB uncompressed archive, 32 MB manifest, 100 MB per attached file,
   20,000 tasks, 1,000 calendars, and 20,000 events per archive.
 
-For a full local recovery copy, preserve your MySQL database and local profile
-(`%LOCALAPPDATA%\Notion` by default), including your template library and any
-separately configured imported-file storage.
+For a full offline recovery copy, close nojeon and preserve the complete account
+cache under `%LOCALAPPDATA%\Notion\Cloud`, including the SQLite database, assets,
+templates, and Recovery folder. Recovery snapshots can depend on shared files in
+`Recovery/Blobs`; keep the whole folder together. Sync is not a replacement for
+independent portable backups.
+
+When migrating from 0.5.0, export each workspace in the old local edition, then
+restore it after signing into the cloud edition. Old local accounts and saved
+template libraries do not migrate automatically. The existing MySQL database
+and legacy profile are left untouched.
 
 ## Page artwork
 

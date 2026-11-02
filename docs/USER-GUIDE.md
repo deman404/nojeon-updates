@@ -6,7 +6,7 @@ Create a page from the sidebar and organize related pages beneath it. Use favori
 
 Open multiple pages in tabs or use side peek to reference a second page. Search with **Ctrl+K** to find titles, content, tables, and attachment names.
 
-Pages autosave. Watch the save status; if a write fails, restore the database connection and use Retry. Encrypted local recovery drafts help preserve unsaved changes.
+Pages autosave to SQLite on this PC. Watch the local save status and the separate cloud sync status. Offline changes are queued for reconnect; if a local write fails, check disk space and use Retry. Encrypted recovery drafts help preserve unsaved edits.
 
 ## Page covers and icons
 
@@ -34,9 +34,9 @@ Use **Settings > Import / export** to import Markdown/HTML documents or folders,
 
 ## Where data lives
 
-Accounts, workspaces, pages, blocks, and calendar records use your configured MySQL database. Local preferences, protected connection settings, saved sessions, recovery drafts, and default imported files use `%LOCALAPPDATA%\Notion`, unless configured otherwise. Protected local settings and drafts use Windows protection for the current Windows account.
+Supabase handles cloud accounts and private workspace sync. Each PC has an account-specific SQLite cache beneath `%LOCALAPPDATA%\Notion\Cloud\<project-host>\<account-id>`. Attachments, artwork, and saved templates sync through private Storage. Saved login tokens and recovery drafts use Windows protection; workspace caches and backup archives contain readable content.
 
-Cloud database support is planned. Do not assume that local attachments or existing databases are automatically synchronized to the cloud.
+Cloud + offline is available in 0.6.0. Appearance preferences remain local. Conflicts require a version choice and keep a recovery copy. See [cloud sync and recovery](CLOUD-SYNC.md).
 
 ## Useful shortcuts
 
@@ -53,4 +53,4 @@ Cloud database support is planned. Do not assume that local attachments or exist
 
 ## Troubleshooting
 
-If saving fails, check the MySQL connection and retain recovery drafts. If a page link fails, sign into its owning account and check Trash. The installer registers Windows `notionlocal://page/...` links; the portable ZIP does not register the Windows protocol handler.
+If a local save fails, check disk space and retain recovery drafts. If cloud sync is offline, local edits remain queued for reconnect. If a page link fails, sign into its owning account and check Trash. The installer registers Windows `notionlocal://page/...` links; the portable ZIP does not register the Windows protocol handler.

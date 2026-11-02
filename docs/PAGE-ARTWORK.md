@@ -32,5 +32,5 @@ and older template archives. Workspace task/calendar backup behavior is unchange
 Markdown/HTML exports currently omit page covers/icons; use a workspace backup
 for exact page artwork.
 
-`AddPageCoversAndIcons` adds optional columns to Pages; startup database setup
-applies this migration. Available in nojeon 0.5.0 and later.
+Page artwork is available in nojeon 0.5.0 and later. In 0.6.0 it saves to the
+SQLite cache and syncs with your cloud workspace; no MySQL setup is required.

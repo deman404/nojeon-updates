@@ -1,42 +1,21 @@
-# Roadmap
+# nojeon roadmap
 
-Planned work is subject to change. No release date or cloud provider is committed yet.
+This is a direction for development, not a delivery schedule.
 
-## Next milestone: cloud database
+## Available in 0.6.0
 
-The next major step is adding cloud database support. The intended outcome is easier access to hosted data, with a clear setup and migration experience.
+- Supabase email accounts, confirmation, and protected saved sessions.
+- Local SQLite caching with offline editing and automatic cloud sync.
+- Private attachment/artwork/template sync between devices.
+- Versioned writes, conflict choices, and restorable recovery copies.
+- Existing notes, tasks, calendars, templates, artwork, and portable backups.
 
-Before release, the work needs to cover:
+## Areas to improve next
 
-- Choose the hosting provider and secure application access model.
-- Define account authentication, authorization, and ownership boundaries.
-- Design migration from existing MySQL databases, including backups and recovery.
-- Decide how attachments and calendar data are stored and transferred.
-- Define behavior when the connection is unavailable and when changes conflict.
-- Verify upgrade, migration, backup, and restore flows.
-- Publish setup instructions, privacy information, and any hosting costs or limits.
+- More granular conflict merging and smoother multi-device updates.
+- Easier migration of old local-edition template libraries.
+- Storage cleanup controls and larger-workspace sync.
+- More complete account recovery and sign-in options.
+- Collaboration and external calendar integrations.
 
-Cloud database support does not by itself promise offline synchronization, live collaboration, shared workspaces, or external calendar integration. Those capabilities require separate scope and verification.
-
-## Shipped in 0.5.0
-
-- Page covers, custom logos, searchable color emoji, and a built-in background gallery.
-- Artwork preservation in backups, duplication, and templates.
-
-## Shipped in 0.4.0
-
-- Reusable starter and personal templates with a full gallery page.
-- Workspace backup/restore for tasks and all account calendars/events.
-
-## Shipped in 0.3.0
-
-- Workspace task management: table and colored Kanban views, due dates, priorities, notes, search, and filters.
-
-## Further improvements
-
-- Dedicated task/calendar exports and backup coverage for saved template libraries.
-- A supported stable .NET runtime after verification.
-- Code signing and a clear application update policy.
-- Accessibility, keyboard navigation, and large-workspace performance improvements.
-
-Follow the changelog and Releases page for features that have actually shipped.
+Updates will be described in [the changelog](CHANGELOG.md) when they ship.

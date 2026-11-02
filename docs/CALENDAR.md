@@ -79,8 +79,8 @@ and events for the signed-in account, plus the selected workspace’s tasks, pag
 and files. Restore creates separate calendar copies without merging or replacing
 existing calendars. Page links within the restored workspace are remapped; links
 to pages outside that workspace are omitted. Repeated restore creates more copies.
-The published 0.3.0 installer and older version 1 archives are page/file-only; keep
-using MySQL backups for calendars until upgrading to a build with version 2 support.
+Older 0.3.0/version 1 archives are page/file-only. In 0.6.0, calendar records save
+to SQLite and sync to your Supabase account; portable workspace backups include
+account calendars and events. MySQL is not required.
 Google/iCloud synchronization, invitations, notifications, and single-occurrence
-exceptions are not part of this local calendar version.
-
+exceptions are not available in this calendar version.

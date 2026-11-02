@@ -30,11 +30,12 @@ The gallery works in Light/Dark mode and adjusts its card columns to the availab
 width. It contains bundled starter layouts and your own templates, not public
 community listings or online downloads.
 
-Saved templates are account-scoped local files under
-`%LOCALAPPDATA%\Notion\Templates\<account-id>` (or the configured local profile).
-They persist across app restarts, but are not cloud-synchronized or included in
-workspace backup archives. Their archives contain readable content/files, so keep
-the local profile private. Tasks and calendars are not part of a page template.
+In 0.6.0, saved templates are cached inside the signed-in cloud account's local
+profile under `%LOCALAPPDATA%\Notion\Cloud\<project-host>\<account-id>\Templates`
+and sync between devices through private Storage. They remain separate from
+workspace backup archives. Their cached archives contain readable content/files;
+keep the profile private. Tasks and calendars are not part of a page template.
+Old local-edition template libraries do not migrate automatically.
 
 Limits: 100 custom templates per account, 1,000 pages and 20,000 blocks per template,
 with the archive limits of 256 MB total, 32 MB manifest, and 100 MB per attachment.

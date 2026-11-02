@@ -1,5 +1,17 @@
 # Product updates
 
+## 0.6.0 — Cloud + offline — 2026-11-02
+
+- Replaced the desktop MySQL requirement with SQLite caching and Supabase sync.
+- Added cloud email accounts, protected sessions, offline editing, and multi-device page/task/calendar/file/template sync.
+- Added version checks, conflict choices, deduplicated recovery files, and recovery restore.
+- Configured custom SMTP and a branded confirmation email.
+- Added a new installer, portable ZIP, checksums, thumbnail, and cloud/migration guides.
+
+Upgrade: export portable workspace backups in 0.5.0, create your cloud account in 0.6.0, then restore. Old accounts/template libraries do not migrate automatically. Existing MySQL data is left untouched.
+
+[Release and downloads](https://github.com/deman404/nojeon-updates/releases/tag/v0.6.0)
+
 ## 0.5.0 — Make every page yours — 2026-10-30
 
 - Added cover banners, uploaded page logos, and emoji icons, with replace/remove controls.
